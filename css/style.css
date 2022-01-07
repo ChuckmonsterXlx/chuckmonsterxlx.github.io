@@ -60,7 +60,7 @@ h3{
 }
 
 .bar2{
-    display: none;
+    display: fixed;
     text-align: right;
     list-style-type: none;
     margin: 0px;
