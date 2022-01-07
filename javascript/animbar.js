@@ -1,13 +1,15 @@
+let bar = document.querySelector(".bar");
+
 let anim = document.querySelector(".bar2");
 let anim2 = document.querySelector(".bar3");
 
 function ocultarMostrar(){
     let scrollTop = document.documentElement.scrollTop;
-    let altura = anim.offsetTop;
+    let altura = bar.offsetTop;
 
     console.log(scrollTop);
-
-    if(scrollTop > 345){
+    console.log(altura);
+    if(scrollTop > altura){
         anim.style.display = "block";
         anim.style.position = "fixed";
         anim.style.top = "0px";
@@ -19,10 +21,15 @@ function ocultarMostrar(){
         anim2.style.width = "auto";
     }
 
-    if(scrollTop <= 345){
+    if(scrollTop <= altura){
         anim.style.display = "none";
         anim2.style.display = "none";
     }
+
+    
+	
+ 
+    //console.log(altura);
     
 
 }
