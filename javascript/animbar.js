@@ -7,8 +7,8 @@ function ocultarMostrar(){
     let scrollTop = document.documentElement.scrollTop;
     let altura = bar.offsetTop;
 
-    console.log(scrollTop);
-    console.log(altura);
+    //console.log(scrollTop);
+    //console.log(altura);
     if(scrollTop > altura){
         anim.style.display = "block";
         anim.style.position = "fixed";
