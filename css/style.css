@@ -1,109 +1,246 @@
-main{
-    text-align: center;
-    background-color: #EBEDEF;
-    margin: 0px;
-    padding: 100px;
-}
-
-body{
-    background-color: #EBEDEF;
-    width: 100%;
-    height: auto;
-}
-
-.lines-effect{
-    display: inline-block;
-    position: relative;
-}
-
-
-h3{
-    position: relative;
-    top: -2em;
-}
-
-.lines-effect::after,.lines-effect::before{
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 3px;
-    background-color: black;
-    top: 1em;
-}
-
-.lines-effect::before{
-    left: -10px;
-}
-
-.lines-effect::after{
-    right: -10px;
-}
-
-/* .bar{
-    position: fixed;
-    right: 0px;
-    top: 35%;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 100;
-} */
-
-.bar{
-    text-align: right;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    background-color: #D6DBDF;
-    overflow: hidden;
-}
-
-.bar2{
-    display: none;
-    text-align: right;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    background-color: #D6DBDF;
-    overflow: hidden;
-} 
-
-.bar3{
-    display: none;
-    text-align: right;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    background-color: #D6DBDF;
-    overflow: hidden;
-    padding: 10px 10px;
-} 
-
-.barliDev{
-    font-size: 10px;
-}
-
-
-li{
-    display: inline-block;
-    position: relative;
+@media (max-width:550px){
+    main{
+        text-align: center;
+        background-color: #EBEDEF;
+        margin: 0px;
+        padding: 100px;
+    }
     
-}
+    body{
+        background-color: #EBEDEF;
+        width: 100%;
+        height: auto;
+    }
+    
+    .lines-effect{
+        display: inline-block;
+        position: relative;
+    }
+    
+    
+    h3{
+        position: relative;
+        top: -2em;
+    }
+    
+    .lines-effect::after,.lines-effect::before{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 3px;
+        background-color: black;
+        top: 1em;
+    }
+    
+    .lines-effect::before{
+        left: -10px;
+    }
+    
+    .lines-effect::after{
+        right: -10px;
+    }
+    
+    /* .bar{
+        position: fixed;
+        right: 0px;
+        top: 35%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+    } */
 
-li a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-}
+    .bar{
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+    }
 
-li a:hover{
-    background-color: #EBEDEF;
-    color: black;
-}
+    .barmobile{
+        display: none;
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+    }
+    
+    .bar2{
+        display: none;
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+    } 
+    
+    .bar3{
+        display: none;
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+        padding: 10px 10px;
+    } 
+    
+    .barliDev{
+        font-size: 10px;
+    }
+    
+    
+    li{
+        display: inline-block;
+        position: relative;
+        
+    }
+    
+    li a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    
+    li a:hover{
+        background-color: #EBEDEF;
+        color: black;
+    }
+    
+    div{
+        text-align: center;
+    }
+  }
+  
 
-div{
-    text-align: center;
-}
+@media (min-width:550px){
+    main{
+        padding: 100px;
+    }
+    
+    body{
+        text-align: center;
+        background-color: #EBEDEF;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    
+    .lines-effect{
+        display: inline-block;
+        position: relative;
+    }
+    
+    
+    h3{
+        position: relative;
+        top: -2em;
+    }
+    
+    .lines-effect::after,.lines-effect::before{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 3px;
+        background-color: black;
+        top: 1em;
+    }
+    
+    .lines-effect::before{
+        left: -10px;
+    }
+    
+    .lines-effect::after{
+        right: -10px;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 40px;
+    }
+
+    .one{
+        grid-column: 1;
+        grid-row: 1;
+
+        text-align: left;
+        padding: 10px 10px;
+    }
+    .two{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .bar{
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+    }
+    
+    .barmobile{
+        display: none;
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+    }
+
+    .bar2{
+        display: none;
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+    } 
+    
+    .bar3{
+        display: none;
+        text-align: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: #D6DBDF;
+        overflow: hidden;
+        padding: 10px 10px;
+    } 
+    
+    .barliDev{
+        font-size: 10px;
+    }
+    
+    
+    li{
+        display: inline-block;
+        position: relative;
+        
+    }
+    
+    li a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    
+    li a:hover{
+        background-color: #EBEDEF;
+        color: black;
+    }
+  }
