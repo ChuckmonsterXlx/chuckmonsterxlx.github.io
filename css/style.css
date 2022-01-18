@@ -188,6 +188,7 @@
         padding: 0px;
         background-color: #D6DBDF;
         overflow: hidden;
+        z-index: 10;
     }
     
     .barmobile{
@@ -208,6 +209,7 @@
         padding: 0px;
         background-color: #D6DBDF;
         overflow: hidden;
+        z-index: 10;
     } 
     
     .bar3{
