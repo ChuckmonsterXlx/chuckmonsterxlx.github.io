@@ -8,8 +8,8 @@ function ocultarMostrar(){
     let scrollTop = document.documentElement.scrollTop;
     let altura = x;
 
-    console.log(scrollTop);
-    console.log(altura);
+    //console.log(scrollTop);
+    //console.log(altura);
 
     if(scrollTop > altura){
         bar.style.position = "fixed";
