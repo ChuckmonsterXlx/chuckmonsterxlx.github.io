@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  basePath: "/chuckmonsterxlx.github.io",
+  images: {
+    unoptimized: true,
+  },
+};
 
 export default nextConfig;
