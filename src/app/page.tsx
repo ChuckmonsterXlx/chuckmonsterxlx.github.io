@@ -1,10 +1,12 @@
-import Layout from "@/components/layout/Layout";
-import { Button } from "@nextui-org/button";
+import { Navbar } from "@/components";
 
 export default function Page() {
   return (
-    <Layout>
-      <h1>Hello World!</h1>
-    </Layout>
+    <>
+      <Navbar />
+      <main className="flex flex-col items-center justify-center p-24">
+        <span className="text-5xl">Hello World!</span>
+      </main>
+    </>
   );
 }
