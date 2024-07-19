@@ -1,0 +1,31 @@
+.iconContainer {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s, padding 0.3s;
+}
+
+.iconContainer:hover {
+  transform: scale(1.1);
+}
+
+.iconTitle {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 12px;
+}
+
+.iconContainer:hover .iconTitle {
+  visibility: visible;
+  opacity: 1;
+}
