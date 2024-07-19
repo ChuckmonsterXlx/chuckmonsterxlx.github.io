@@ -26,9 +26,6 @@ export const Navbar = () => {
             <Link href={"/"}>
               <div>Chuckmonster</div>
             </Link>
-            <span className="content-end text-xs pb-[2px]">
-              Full Stack Developer
-            </span>
           </div>
         </div>
 
