@@ -10,9 +10,26 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <main className="grid grid-cols-1 px-5 py-3 text-center lg:grid-cols-2">
+
+      <main className="grid grid-cols-1 px-5 py-3 lg:grid-cols-2">
         <div className="content-center py-24 lg:p-24">
-          <p className="text-3xl lg:text-5xl">{`I'm a Full Stack Web Developer`}</p>
+          <h1 className="text-3xl lg:text-5xl font-bold text-[#172554] mb-4">
+            {`Hello 👋 I'm a passionate Full Stack Web Developer`}
+          </h1>
+          <p className="mb-4 text-lg text-gray-700 lg:text-xl">
+            I have experience creating web and mobile applications using
+            JavaScript, TypeScript, React.js, Next.js, React Native, and
+            Node.js.
+          </p>
+          <div className="flex justify-center py-10">
+            <a
+              href="/cv/Alfonso_Velarde_Mota_Developer_CV.pdf"
+              download
+              className="px-6 py-3 text-lg font-bold text-white transition duration-300 bg-blue-500 rounded-lg shadow-lg hover:bg-blue-700"
+            >
+              Download CV
+            </a>
+          </div>
         </div>
         <div className="grid gap-10 lg:p-24">
           <div className="grid items-center grid-cols-2 gap-10 lg:grid-cols-2">
